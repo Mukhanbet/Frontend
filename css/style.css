@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -6,6 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 nav {
@@ -18,4 +26,16 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
+}
+
+.hero {
+  background-image: url('/img/bc-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
