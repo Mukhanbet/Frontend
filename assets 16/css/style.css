@@ -92,3 +92,56 @@ ul {
     color: #ffffff;
     border-radius: 50%;
 }
+
+.card__body--dates li.circle {
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.card__body--dates li.circle span {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.card__body--dates li.circle.orange {
+    border-color: #DE6E46;
+}
+
+.card__body--dates li.circle.orange span {
+    background: #DE6E46;
+}
+
+.card__body--dates li.circle.purple {
+    border-color: #AE5989;
+}
+
+.card__body--dates li.circle.purple span {
+    background: #AE5989;
+}
+
+.card__footer {
+    padding: 0 1.25rem;
+    color: #333333;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__footer .add {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #DE6E46;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-top: 0.25rem;
+    display: grid;
+    place-items: center;
+}
