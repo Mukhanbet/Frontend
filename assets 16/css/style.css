@@ -34,3 +34,11 @@ ul {
     grid-template-rows: 8rem auto 10rem;
     box-shadow: 0 1rem 2.5rem rgb(27, 64, 94);
 }
+
+.card__header {
+    padding: 0 1.25rem;
+    color: #7D8994;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
