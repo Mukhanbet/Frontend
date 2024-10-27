@@ -23,3 +23,14 @@ body {
 ul {
     list-style: none;
 }
+
+.card {
+    background: #ffffff;
+    width: 90%;
+    max-width: 40rem;
+    min-height: 40rem;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 8rem auto 10rem;
+    box-shadow: 0 1rem 2.5rem rgb(27, 64, 94);
+}
