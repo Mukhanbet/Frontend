@@ -64,3 +64,31 @@ ul {
     color: #7D8994;
     margin: 0 1px;
 }
+
+.card__body--dates {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.card__body--dates li {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.card__body--dates li.prev,
+.card__body--dates li.next {
+    color: #ccc;
+}
+
+.card__body--dates li.active {
+    background: #DE6E46;
+    color: #ffffff;
+    border-radius: 50%;
+}
