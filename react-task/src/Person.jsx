@@ -21,7 +21,8 @@ const Person = () => {
             <p>Location: {person.location}</p>
             <p>Hobby: {person.hobby}</p>
             {message && <p>{message}</p>}
-            <button onClick={() => setMessage("You pressed the button!")}>Press me</button>
+            <button onClick={() => setMessage("You pressed the button!")}>Promote</button>
+
         </div>
     );
 };
