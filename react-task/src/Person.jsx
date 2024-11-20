@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 const Person = () => {
+    const [message, setMessage] = useState("");
+
     const person = {
         name: "Nurmukhanbet Alaibek uulu",
         position: "Developer",
@@ -16,7 +20,8 @@ const Person = () => {
             <p>Experience: {person.experience}</p>
             <p>Location: {person.location}</p>
             <p>Hobby: {person.hobby}</p>
-            <button>Press me</button>
+            {message && <p>{message}</p>}
+            <button onClick={() => setMessage("You pressed the button!")}>Press me</button>
         </div>
     );
 };
