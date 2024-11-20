@@ -16,6 +16,7 @@ const Person = () => {
             <p>Experience: {person.experience}</p>
             <p>Location: {person.location}</p>
             <p>Hobby: {person.hobby}</p>
+            <button>Press me</button>
         </div>
     );
 };
