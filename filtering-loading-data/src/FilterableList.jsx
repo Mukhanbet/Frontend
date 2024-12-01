@@ -28,6 +28,12 @@ const FilterableList = () => {
   return (
     <div>
       <h1>Data filtering</h1>
+      <input
+      type="text"
+      placeholder="Search..."
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      />
     </div>
   );
 };
