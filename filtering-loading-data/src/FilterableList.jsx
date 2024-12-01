@@ -23,7 +23,10 @@ const FilterableList = () => {
   
     fetchData();
   }, []);
-  
+
+  const filteredData = data.filter((item) =>
+    item.toLowerCase().includes(searchTerm.toLowerCase())
+  );  
 
   return (
     <div>
@@ -34,6 +37,20 @@ const FilterableList = () => {
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
       />
+
+      {searchTerm ? (
+        filteredData.length > 0 ? (
+          <div>
+            {filteredData.map((item, index) => (
+              <div key={index}>{item}</div>
+            ))}
+          </div>
+        ) : (
+          <p>Nothing found</p>
+        )
+      ) : (
+        <p>Enter text to search</p>
+      )}
     </div>
   );
 };
